@@ -31,7 +31,6 @@
 
 from flask import Flask, redirect, url_for, request, abort
 
-from views.index import index_blueprint
 from news.index import news_blueprint
 from institution.index import institution_blueprint
 from users.index import users_blueprint
@@ -58,7 +57,6 @@ application.config['MYSQL_DATABASE_DB'] = 'roytuts'
 application.config['MYSQL_DATABASE_HOST'] = 'localhost'
 # mysql.init_app(application)
 
-application.register_blueprint(index_blueprint)
 application.register_blueprint(news_blueprint)
 application.register_blueprint(users_blueprint)
 application.register_blueprint(institution_blueprint)
