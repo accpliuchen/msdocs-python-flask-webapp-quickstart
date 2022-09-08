@@ -11,7 +11,7 @@ from match.index import match_blueprint
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 
 app.config['SECRET_KEY'] = 'secret-key'
 app.config['CORS_HEADERS'] = 'Content-Type'
