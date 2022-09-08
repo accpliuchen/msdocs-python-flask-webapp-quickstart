@@ -12,7 +12,7 @@ class AmanMySQL():
 
         self.host = "nyuhealth.mysql.database.azure.com"
         self.user = "xuejinyu"
-        self.passwd = "yuHealth2022!"
+        self.passwd = "nyuHealth2022!"
         self.dbName = "mydb"
         self.port = "3306"
 
