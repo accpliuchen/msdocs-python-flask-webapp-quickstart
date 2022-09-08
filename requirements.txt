@@ -1,1 +1,9 @@
 Flask==2.0.2
+flask-restful
+flask-jwt-extended
+passlib
+flask-sqlalchemy
+PyMySQL
+Flask-RESTful
+flask-session
+Flask-Cors==3.0.7
