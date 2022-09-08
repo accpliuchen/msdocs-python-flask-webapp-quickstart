@@ -16,6 +16,14 @@ CORS(app)
 app.config['SECRET_KEY'] = 'secret-key'
 app.config['CORS_HEADERS'] = 'Content-Type'
 
+app.register_blueprint(index_blueprint)
+app.register_blueprint(news_blueprint)
+app.register_blueprint(users_blueprint)
+app.register_blueprint(institution_blueprint)
+app.register_blueprint(protocol_blueprint)
+app.register_blueprint(patient_blueprint)
+app.register_blueprint(match_blueprint)
+
 @app.route('/')
 def index():
    print('Request for index page received')
