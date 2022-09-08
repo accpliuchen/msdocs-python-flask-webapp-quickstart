@@ -1,7 +1,20 @@
 from datetime import datetime
-from flask import Flask, render_template, request, redirect, url_for, send_from_directory
-app = Flask(__name__)
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory, abort
 
+from views.index import index_blueprint
+from news.index import news_blueprint
+from institution.index import institution_blueprint
+from users.index import users_blueprint
+from protocol.index import protocol_blueprint
+from patient.index import patient_blueprint
+from match.index import match_blueprint
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)
+
+app.config['SECRET_KEY'] = 'secret-key'
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/')
 def index():
