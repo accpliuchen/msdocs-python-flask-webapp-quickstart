@@ -6,4 +6,4 @@ flask-sqlalchemy
 PyMySQL
 Flask-RESTful
 flask-session
-Flask-Cors==3.0.7
+flask-cors
